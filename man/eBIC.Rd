@@ -2,8 +2,7 @@
 % Please edit documentation in R/Functions.R
 \name{eBIC}
 \alias{eBIC}
-\title{Function to evaluate eBIC 
- #'}
+\title{Function to evaluate eBIC}
 \usage{
 eBIC(theta, S, z, gam, n.stream, f, n.trials)
 }
@@ -21,6 +20,5 @@ eBIC(theta, S, z, gam, n.stream, f, n.trials)
 \item{n.trials}{number of experimental trials (m)}
 }
 \description{
-Function to evaluate eBIC 
- #'
+Function to evaluate eBIC
 }

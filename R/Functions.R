@@ -5,7 +5,7 @@ pre_processing_function <- function(data){
   #'
   #' @param data (rds) rds file containing raw data
   #' @export  
-  #' Outputs a nested list of trial spike times for each neuron (same structure as simulation study)
+  
 
   h=vector(mode="list", length=dim(data)[1])
   
@@ -46,7 +46,7 @@ spike_density = function(data, bin_size, a, b, title, c, d){
   #' @param title title of plot
   #' @param c,d ylimits for plots 
   #' @export  
-  #' Outputs a nested list of trial spike times for each neuron (same structure as simulation study)
+  
   xs = seq(-5,10, bin_size)
   check = lapply(data, function(x) cut(x, breaks = xs))
   check2 = lapply(check, table)
@@ -113,7 +113,7 @@ glasso = function(n.stream,  chosen_lambda, S_hat, Max_iter){
 
 eBIC = function(theta, S, z, gam, n.stream, f, n.trials){
   #'  Function to evaluate eBIC 
-  #'  #'
+  #'  
   #' @param theta estimate of inverse SDM for given lambda 
   #' @param S Peirodogram estimate
   #' @param gam tuning parameter
@@ -271,6 +271,8 @@ calc_result = function(res){
   #'  #'
   #' @param res rds file calcaulted in Estimation.R file
   #' @export  
+  
+  
   # get ebic estimates
   ebic = unlist(map(res, 1))
   idx = which.min(Re(ebic))

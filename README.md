@@ -7,9 +7,9 @@ To install and load the package, please use the following commands
 
     library(devtools)
 
-    install_github('pinkney19/HDSpectralEstimation')
+    install_github('pinkney19/RiSE')
 
-    library(HDSpectralEstimation)
+    library(RiSE)
 
 If you have any questions, please don't hesitate to contact me: c.pinkney(at)lancaster.ac.uk 👩‍💻
 

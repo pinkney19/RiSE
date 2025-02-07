@@ -1,0 +1,5 @@
+Package: RiSE
+Type: Package
+Title: Regularised Spectral Estimation for High Dimensional Point Processes
+Version: 0.0.1.0
+RoxygenNote: 7.3.1
